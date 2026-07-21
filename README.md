@@ -2,9 +2,12 @@
 
 Interface web para gerenciamento de tarefas, construída com React e Vite. Consome a [api-tarefas](https://github.com/Karllyson-Paula/api-tarefas) em produção.
 
-## 🚀 Acesso
+## 🚀 Deploy
 
-A API consumida está em produção:
+https://frontend-tarefas-beta.vercel.app
+
+## 🔗 API em produção
+
 https://api-tarefas-production-afa5.up.railway.app
 
 ## Tecnologias
@@ -12,14 +15,16 @@ https://api-tarefas-production-afa5.up.railway.app
 - React
 - Vite
 - JavaScript (ES6+)
+- Vercel (deploy)
 
 ## Funcionalidades
 
 - Cadastro e login de usuários
 - Autenticação com JWT
 - Criar, listar, concluir e deletar tarefas
+- Contador de tarefas concluídas
+- Token salvo no localStorage — sessão persistente
 - Dados persistidos em banco PostgreSQL via API
-- Token salvo no localStorage
 
 ## Como rodar localmente
 
@@ -38,13 +43,13 @@ VITE_API_URL=https://api-tarefas-production-afa5.up.railway.app
 frontend-tarefas/
 src/
 components/
-Header.jsx     ← título da aplicação
-Login.jsx      ← tela de login e cadastro
-Tarefa.jsx     ← item da lista de tarefas
+Header.jsx ← título da aplicação
+Login.jsx ← tela de login e cadastro
+Tarefa.jsx ← item da lista de tarefas
 services/
-api.js         ← chamadas à API
-App.jsx          ← componente principal
-main.jsx         ← entrada da aplicação
+api.js ← chamadas à API REST
+App.jsx ← componente principal e gerenciamento de estado
+main.jsx ← entrada da aplicação
 
 ```
 
